@@ -1,0 +1,4 @@
+module Yahoo
+
+
+end

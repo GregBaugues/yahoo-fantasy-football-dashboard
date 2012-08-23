@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: yahoo_fantasy_football_development
+  pool: 5
+  username: greg
+  password:
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: yahoo_fantasy_football_test
+  pool: 5
+  username: greg
+  password:
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: project_production
+  pool: 5
+  username:
+  password:
