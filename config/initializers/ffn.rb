@@ -1,0 +1,1 @@
+FFNerd.api_key = Settings.ffn_api_key

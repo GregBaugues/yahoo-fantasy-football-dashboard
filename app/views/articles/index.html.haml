@@ -1,0 +1,10 @@
+.row
+  .span6
+    %table.table
+      %tbody
+        -@articles.each do |article|
+          %tr
+            %td= link_to article.title, article.link
+            %td
+              -unless article.player.nil?
+                = article.player.yahoo_team_name

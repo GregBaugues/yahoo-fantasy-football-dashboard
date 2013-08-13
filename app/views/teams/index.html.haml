@@ -1,0 +1,7 @@
+.span3
+  %table.table
+    %tbody
+      - @teams.each do |team|
+        %tr
+          %td= link_to team.name, team_path(team)
+          %td.points= team.active_points

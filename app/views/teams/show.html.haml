@@ -1,0 +1,42 @@
+%h2= @team.name
+.row
+  .span4
+    %table.table
+      %tbody
+        -@team.active.each do |player|
+          %tr
+            %td= player.position
+            %td= player.name
+            %td= player.bye_week
+            %td.points= player.points
+    %h3 Bench
+    %table.table
+      %tbody
+        -@team.bench.each do |player|
+          %tr
+            %td= player.position
+            %td= player.name
+            %td= player.bye_week
+            %td.points= player.points
+  .span4.offset1
+
+    %h3 Free Agents
+    %table.table
+      %tbody
+        -@team.better_free_agents.each do |player|
+          %tr
+            %td= player.position
+            %td= player.name
+            %td= player.team
+            %td= player.bye_week
+            %td.points= player.points
+
+    / %h3 News
+    / %table.table
+    /   %tbody
+    /     -@team.articles.each do |article|
+    /       %tr
+    /         %td= link_to article.title, article.link
+
+
+

@@ -1,0 +1,12 @@
+.row
+  .span7
+    %table.table
+      %tbody
+        -@players.each do |player|
+          -@rank += 1
+          %tr
+            %td= @rank
+            %td= player.position
+            %td= player.name
+            %td= player.yahoo_team_name
+            %td= player.points
